@@ -1,4 +1,16 @@
-body {
-  background-color: rgb(172, 20, 96);
+.Navbar {
+  margin-top: auto;
+  background-color: #344CB7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
+.Logo {
+  height: 150px;
+  margin-bottom: -60px;
+  margin-top: -30px;
+  margin-left: -60px;
+
+}
