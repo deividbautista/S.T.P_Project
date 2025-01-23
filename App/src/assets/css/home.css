@@ -8,9 +8,88 @@
 }
 
 .Logo {
-  height: 150px;
-  margin-bottom: -60px;
-  margin-top: -30px;
-  margin-left: -60px;
+  height: 100px;
+  margin-bottom: -55px;
+  margin-top: -50px;
+  margin-left: -50px;
 
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-toggler .icono-bar{
+  font-size: 20px;
+  color: azure;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  position: relative;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 60px;
+  display: inline-block;
+}
+
+.nav-item.active a {
+  color: #ff9800;
+}
+
+.hori-selector {
+  position: absolute;
+  background: #ff9800;
+  height: 4px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: #2d3f92;
+    margin-top: 270px;
+    margin-left: -32px;
+  }
 }
