@@ -1,21 +1,18 @@
-import './App.css'
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
-      <body>
-        <header>
-          <title>malparido</title>
-        </header>
-        <div>
-          <p className="read-the-docs">
-            Hola mundo
-          </p>
-        </div>
-
-      </body>
-
+    <header>
+      <Home/>
+    </header>
+      <div>
+      <p className="read-the-docs">
+        soy jamon
+      </p>
+      </div>
+     
     </>
   )
 }
