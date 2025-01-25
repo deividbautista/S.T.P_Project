@@ -21,7 +21,7 @@ const Navbar = () => {
   
     // Inicializar el hori-selector
     const initHoriSelector = () => {
-      const activeItem = navbarRef.current?.querySelectorAll(".nav-item")[activeIndex];
+      const activeItem = navbarRef.current?.querySelectorAll(".Nav_item")[activeIndex];
       if (activeItem) {
         updateHoriSelector(activeItem);
         console.log("perro")
@@ -54,13 +54,13 @@ const Navbar = () => {
         >
           <FontAwesomeIcon className="Icono_bar" icon={faBars} />
         </button>
-        <div className="navbar-collapse" ref={navbarRef}>
-          <div className="hori-selector" ref={horiSelectorRef}></div> 
-          <ul className="navbar-nav">
+        <div className="Navbar_collapse" ref={navbarRef}>
+          <div className="Hori_selector" ref={horiSelectorRef}></div> 
+          <ul className="Navbar_nav">
             {["Nosotros", "Servicios", "Productos", "Contactenos"].map((item, index) => (
               <li
                 key={index}
-                className={`nav-item ${index === activeIndex ? "active" : ""}`}
+                className={`Nav_item ${index === activeIndex ? "active" : ""}`}
                 onClick={() => handleNavItemClick(index)}
               >
                 {/* <FontAwesomeIcon className="icono-bar" icon={faUsersViewfinder} /> */}
