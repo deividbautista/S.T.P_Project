@@ -49,10 +49,10 @@ const Navbar = () => {
           <img className="Logo" src={image} alt="Logo" />
         </div>
         <button
-          className="navbar-toggler"
+          className="Navbar_toggler"
           onClick={() => navbarRef.current?.classList.toggle("show")}
         >
-          <FontAwesomeIcon className="icono-bar" icon={faBars} />
+          <FontAwesomeIcon className="Icono_bar" icon={faBars} />
         </button>
         <div className="navbar-collapse" ref={navbarRef}>
           <div className="hori-selector" ref={horiSelectorRef}></div> 

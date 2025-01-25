@@ -15,7 +15,7 @@
 
 }
 
-.navbar-toggler {
+.Navbar_toggler {
   background-color: transparent;
   border: none;
   padding: 10px;
@@ -23,7 +23,7 @@
   display: none;
 }
 
-.navbar-toggler .icono-bar{
+.Navbar_toggler .icono-bar{
   font-size: 20px;
   color: azure;
 }
