@@ -19,7 +19,7 @@ const Navbar = () => {
       }
     };
   
-    // Inicializar el hori-selector
+    // Inicializar el hori_selector
     const initHoriSelector = () => {
       const activeItem = navbarRef.current?.querySelectorAll(".Nav_item")[activeIndex];
       if (activeItem) {
@@ -63,7 +63,7 @@ const Navbar = () => {
                 className={`Nav_item ${index === activeIndex ? "active" : ""}`}
                 onClick={() => handleNavItemClick(index)}
               >
-                {/* <FontAwesomeIcon className="icono-bar" icon={faUsersViewfinder} /> */}
+                {/* <FontAwesomeIcon className="Icono_bar" icon={faUsersViewfinder} /> */}
                 <a href="#">{item}</a>
               </li>
             ))}
