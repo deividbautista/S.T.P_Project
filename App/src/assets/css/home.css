@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  height: 42px;
 }
 
 .Logo {
@@ -12,7 +13,6 @@
   margin-bottom: -55px;
   margin-top: -50px;
   margin-left: -30px;
-
 }
 
 .Navbar_toggler {
@@ -50,6 +50,18 @@
 
 .Nav_item.active a {
   color: #ff9800;
+  font-size: 18px;
+  transition: .4s ease;
+}
+
+.Nav_icon{
+  color: white;
+  padding-left: 10px;
+}
+.Nav_icon.active{
+  color: #ff9800;
+  font-size: 18px;
+  transition: .4s ease;
 }
 
 .Hori_selector {
