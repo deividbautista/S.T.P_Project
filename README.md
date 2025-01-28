@@ -14,7 +14,7 @@ Proyecto enfocado en otorgar una interfaz web, para la prestación de servicios 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 ```
 ```sh
-#Importar iconos
+# Importar iconos
 npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 ```
 ```sh
