@@ -11,7 +11,11 @@ Proyecto enfocado en otorgar una interfaz web, para la prestación de servicios 
 ```
 ```sh
 # Otorgar permisos a windows en caso de ser solicitados
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process    
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```
+```sh
+#Importar iconos
+npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 ```
 ```sh
 # Para correr el proyecto
