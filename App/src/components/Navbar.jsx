@@ -1,5 +1,5 @@
 import '../assets/css/home.css';
-import image from '../assets/img/T&F.png';
+import image from '../assets/img/T&F.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faUsersViewfinder, faBriefcase, faBox, faEnvelope, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useRef, useState, useCallback } from 'react';

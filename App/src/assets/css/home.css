@@ -85,6 +85,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .Navbar{
+    width: 92%;
+  }
+
   .Navbar_toggler {
     display: block;
   }
@@ -92,6 +96,7 @@
   .Navbar_collapse {
     display: none;
     flex-direction: column;
+    
   }
 
   .Navbar_nav {
