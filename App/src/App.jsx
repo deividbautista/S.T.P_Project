@@ -8,9 +8,6 @@ function App() {
       <Home/>
     </header>
       <div>
-      <p className="read-the-docs">
-        soy jamon
-      </p>
       </div>
      
     </>
