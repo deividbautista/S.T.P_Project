@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <nav className="Navbar">
       <div className="Navbar_logo">
-        <img className="Logo" src={image} alt="Logo" />
+        <a href=""><img className="Logo" src={image} alt="Logo" /></a>
       </div>
       <button
         className="Navbar_toggler"

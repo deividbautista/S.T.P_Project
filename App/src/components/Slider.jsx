@@ -20,9 +20,36 @@ const slides = [
     }
 ];
 
-const slider = () => {
+const Slider = () => {
     const [currentIndex, setCurrentIndex] = useState (0);
     const nextSlider = () => {
         setCurrentIndex ((prevIndex) => (prevIndex + 1) % slides.length);
-    }
-} 
+    };
+    const prevSlider = () => {
+        setCurrentIndex ((prevIndex) => (prevIndex - 1 + slider.length) % slides.length);
+    };
+    return (
+        <main className='Slider_container'>
+            <ul className='Slider'>
+                {slides.map ((slide, index) => (
+                    <li 
+                        key={index}
+                        className={`item ${index === currentIndex ? 'active' : ''}`}
+                        style={{backgroundImage: `url(${slide.image})`}}
+                    >
+                        <div className='Content'></div>
+                        <h2 className='Title'>{slide.title}</h2>
+                        <p className='Description'>{slide.description}</p>
+                        <button> read more </button>
+                    </li>
+                ))}
+            </ul>
+            <nav className='Nav'>
+                <button className='Btn_prev' onClick={prevSlider}></button>
+                <button className='Btn_next' onClick={nextSlider}></button>
+            </nav>
+        </main>
+    )
+}
+
+export default Slider;
