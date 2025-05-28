@@ -1,6 +1,6 @@
 .Navbar {
   margin-top: auto;
-  background-color: #6b48c5ef;
+  background-color: #6b48c5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,11 +69,12 @@
 .Hori_selector {
   position: absolute;
   background: #80C4E9;
-  height: 6px;
+  height:4px;
+  border-radius: 8px;
   width: 0;
   bottom: 0;
   left: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .Header_background{
