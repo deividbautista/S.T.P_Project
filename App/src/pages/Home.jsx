@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar'
+import Slider from '../components/Slider'
 
 function Home () {
     return (
@@ -6,7 +7,9 @@ function Home () {
             <Navbar />
             <div className='Header_background'>
             </div>
-            <p>hello</p>
+            <br />
+            <div><Slider /></div>
+            <br />
         </div>
     ) 
 }
