@@ -16,28 +16,33 @@
 }
 
 .slide {
-  min-width: 100%;
+   min-width: 100%;
   height: 500px;
   background-size: cover;
   background-position: center;
   display: none;
   flex-shrink: 0;
   position: relative;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
   display: block;
+  opacity: 1;
 }
 
 .content {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: rgba(0, 0, 0, 0.084);
+  color: azure;
   padding: 0px;
   border-radius: 10px;
   max-width: 60%;
+  padding: 10px;
 }
 
 .title {
@@ -46,16 +51,30 @@
 }
 
 .description {
-  margin: 0 0 10px;
+ color: azure;
 }
 
 .read-more {
-  background-color: #ff6600;
+  background-color: #ff660000;
   border: none;
   padding: 0px 20px;
-  color: white;
+  color: azure;
   cursor: pointer;
-  border-radius: 6px;
+  font-size: 15px;
+  padding-top: 10px;
+  margin-left: -20px;
+}
+
+.read-more:hover {
+  background-color: #ff660000;
+  border: none;
+  padding: 0px 20px;
+  color: azure;
+  cursor: pointer;
+  font-size: 16px;
+  padding-top: 10px;
+  margin-left: -20px;
+  transition: 0.2s;
 }
 
 .navigation {
@@ -72,7 +91,7 @@
 .nav-btn-l {
   background: rgba(59, 10, 48, 0.6);
   border: none;
-  color: white;
+  color: azure;
   font-size: 20px;
   padding: 10px;
   cursor: pointer;
@@ -82,10 +101,11 @@
 .nav-btn-r {
   background: rgba(59, 10, 48, 0.6);
   border: none;
-  color: white;
+  color: azure;
   font-size: 20px;
   padding: 10px;
   margin-right: 30px;
   cursor: pointer;
   border-radius: 50%;
 }
+
