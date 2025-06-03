@@ -1,0 +1,147 @@
+/* .slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  display: none;
+  flex-shrink: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 5s; 
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+ */
+.content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background: rgba(0, 0, 0, 0.251);
+  color: azure;
+  padding: 0px;
+  border-radius: 10px;
+  max-width: 60%;
+  padding: 10px;
+}
+
+.title {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.description {
+ color: azure;
+}
+
+.read-more {
+  background-color: #ff660000;
+  border: none;
+  padding: 0px 20px;
+  color: azure;
+  cursor: pointer;
+  font-size: 15px;
+  padding-top: 10px;
+  margin-left: -20px;
+}
+
+.read-more:hover {
+  background-color: #ff660000;
+  border: none;
+  padding: 0px 20px;
+  color: azure;
+  cursor: pointer;
+  font-size: 16px;
+  padding-top: 10px;
+  margin-left: -20px;
+  transition: 0.2s;
+}
+
+.navigation {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.nav-btn-l {
+  background: rgba(77, 13, 63, 0.27);
+  border: none;
+  color: azure;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.nav-btn-r {
+  background: rgba(77, 13, 63, 0.27);
+  border: none;
+  color: azure;
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 600px; /* necesaria para contener los slides absolutos */
+}
+
+.slider {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
