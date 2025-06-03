@@ -68,7 +68,7 @@
 // export default Slider;
 
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import '../assets/css/Slider.css';
@@ -96,9 +96,9 @@ const slides = [
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const timeoutRef = useRef(null);
 
   const goToNext = () => {
-    console.log("Tu mensaje aquí");
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
@@ -106,12 +106,21 @@ const Slider = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
   };
 
-  // Auto-slide cada 5 segundos
+  // 🔁 Reinicia el temporizador cada vez que cambia currentIndex
   useEffect(() => {
-    const interval = setInterval(goToNext, 8000);
-    return () => 
-      clearInterval(interval); // Limpiar al desmontar
-  }, []);
+    // Limpiar timeout anterior
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    // Crear nuevo timeout que cambia al siguiente slide
+    timeoutRef.current = setTimeout(() => {
+      goToNext();
+    }, 8000);
+
+    // Limpiar timeout si se desmonta el componente
+    return () => clearTimeout(timeoutRef.current);
+  }, [currentIndex]);
 
   return (
     <main className="slider-container">
