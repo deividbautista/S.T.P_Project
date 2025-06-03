@@ -3,6 +3,9 @@ Proyecto enfocado en otorgar una interfaz web, para la prestación de servicios 
 
 ## Requisitos previos
 * Nodejs [nodejs](https://nodejs.org/en/download)
+
+* MongoDB [mongodb](https://www.mongodb.com/try/download/community)
+---
 ---
 
 ```sh
