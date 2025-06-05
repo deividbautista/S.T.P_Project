@@ -116,7 +116,7 @@ const Slider = () => {
     // Crear nuevo timeout que cambia al siguiente slide
     timeoutRef.current = setTimeout(() => {
       goToNext();
-    }, 8000);
+    }, 10000);
 
     // Limpiar timeout si se desmonta el componente
     return () => clearTimeout(timeoutRef.current);

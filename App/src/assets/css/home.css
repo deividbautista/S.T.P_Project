@@ -77,13 +77,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.Header_background{
-  background-image: url(https://images2.alphacoders.com/137/thumb-1920-1372963.png);
-  background-color: #2d3f92;
-  background-size: cover;
-  height: 100vh;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .Navbar{
