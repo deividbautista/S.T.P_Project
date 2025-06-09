@@ -1,9 +1,9 @@
 .content {
   position: absolute;
   top: 75%;
-  left: 30%;
+  left: 36rem;
   transform: translate(-50%, -50%);
-  background: #534da59e;
+  background: #534da554;
   color: #dbf2ff;
   padding: 0px;
   border-radius: 10px;
@@ -85,7 +85,7 @@
   max-width: 100%;
   margin: auto;
   overflow: hidden;
-  margin-top: 54px;
+  margin-top: 62px;
   height: 40rem; /* necesaria para contener los slides absolutos */
 }
 

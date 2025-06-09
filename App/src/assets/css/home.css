@@ -5,16 +5,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  height: 42px;
+  height: 50px;
   position: fixed;
   width: 100%;
 }
 
 .Logo {
   height: 200px;
-  margin-bottom: -55px;
-  margin-top: -50px;
-  margin-left: -40px;
+  margin-left: 25px;
 }
 
 .Navbar_toggler {
@@ -31,7 +29,7 @@
 }
 
 .Navbar_collapse {
-  margin-right: 50px;
+  margin-right: 70px;
 }
 
 .Navbar_nav {
@@ -46,7 +44,7 @@
 .Nav_item a {
   text-decoration: none;
   color: white;
-  padding: 10px 10px;
+  padding: 10px 15px;
   display: inline-block;
 }
 
