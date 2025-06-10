@@ -126,3 +126,18 @@
   opacity: 1;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #534da554;
+  color: #dbf2ff;
+  padding: 0px;
+  border-radius: 10px;
+  max-width: 100%;
+  padding: 10px;
+  z-index: 2;
+}
+}

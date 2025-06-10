@@ -79,6 +79,7 @@
 @media (max-width: 768px) {
   .Navbar{
     width: 92%;
+    z-index: 4;
   }
 
   .Navbar_toggler {
@@ -88,7 +89,6 @@
   .Navbar_collapse {
     display: none;
     flex-direction: column;
-    
   }
 
   .Navbar_nav {
@@ -96,16 +96,55 @@
   }
 
   .Nav_item {
+    top: 30px;
     width: 100%;
     text-align: center;
+
   }
+
+  .Nav_item a{
+    text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   margin-top: 70px;
+   display: inline-block;
+   font-size: 30px
+  }
+
+  .Nav_item.active a{
+   font-size: 30px
+  }
+
+  .Nav_icon{
+   color: white;
+   font-size: 30px;
+  }
+
+  .Nav_icon.active{
+   color: #80C4E9;
+   font-size: 35px;
+   transition: .4s ease;
+  }
+
+  .Hori_selector {
+   position: absolute;
+   background: #80C4E9;
+   height:10px;
+   border-radius: 0px;
+   transition: all 0.2s ease-in-out;
+ }
 
   .Navbar_collapse.show {
     display: block;
     position: absolute;
     width: 100%;
-    background-color: #2d3f92;
-    margin-top: 234px;
+    background-color: #2d4092fb;
+    margin-top: 1026px;
     margin-left: -32px;
+    height: 100vh;
   }
+  .Logo {
+  height: 200px;
+  margin-left: -30px;
+}
 }
