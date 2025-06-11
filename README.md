@@ -1,5 +1,5 @@
 ﻿# S.T.P_Project
-Proyecto enfocado en otorgar una interfaz web, para la prestación de servicios y soluciones tecnologicas en el ambito de soporte tecnico, distribución de tecnologia, desarrollo de proyectos y consultoria, para empresas.
+Proyecto enfocado en otorgar una interfaz web, para la prestación de servicios y soluciones tecnologicas en el ambito de soporte tecnico, distribución de tecnologia, desarrollo de proyectos y consultoria, para empresas y particulares que lo requieran.
 
 ## Requisitos previos
 * Nodejs [nodejs](https://nodejs.org/en/download)
