@@ -1,9 +1,9 @@
 .content {
   position: absolute;
   top: 75%;
-  left: 36rem;
+  left: 42rem;
   transform: translate(-50%, -50%);
-  background: #534da554;
+  background: #534da593;
   color: #dbf2ff;
   padding: 0px;
   border-radius: 10px;
@@ -21,29 +21,31 @@
 .description {
  color: azure;
  font-size: 22px;
+ padding-bottom: 25px;
 }
 
 .read-more {
-  background-color: #ff660000;
-  border: none;
-  padding: 0px 20px;
-  color: azure;
+  background-color: #b8b4ee00;
+  border-color: #b8e3fa;
+  border-width: 3px;
+  padding: 10px 20px;
+  color: #b8e3fa;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 10px;
-  margin-left: -20px;
+  border-radius: 6px;
+  border-style: solid;
 }
 
 .read-more:hover {
-  background-color: #ff660000;
-  border: none;
-  padding: 0px 20px;
-  color: azure;
+  background-color: #b8e3fa;
+  padding: 10px 20px;
+  color: #4c45aa;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   padding-top: 10px;
-  margin-left: -20px;
-  transition: 0.2s;
+  border-radius: 6px;
+  transition: 0.5s;
 }
 
 .navigation {
@@ -86,7 +88,7 @@
   margin: auto;
   overflow: hidden;
   margin-top: 62px;
-  height: 40rem; /* necesaria para contener los slides absolutos */
+  height: 45rem; 
 }
 
 .slider {
@@ -127,17 +129,46 @@
   z-index: 1;
 }
 @media (max-width: 768px) {
+
   .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #534da554;
-  color: #dbf2ff;
-  padding: 0px;
-  border-radius: 10px;
-  max-width: 100%;
-  padding: 10px;
-  z-index: 2;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #534da5dc;
+    color: #dbf2ff;
+    padding: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 2;
+  }
+
+  .description {
+    text-align: justify;
+  }
+
+  .read-more {
+    background-color: #b8b4ee00;
+    border-color: #b8e3fa;
+    border-width: 3px;
+    padding: 10px 20px;
+    color: #b8e3fa;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 1;
+    border-radius: 6px;
+    border-style: solid;
+    margin-left: 25%;
+  }
+
+  .read-more:hover {
+    background-color: #b8e3fa;
+    padding: 10px 20px;
+    color: #4c45aa;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
 }

@@ -64,7 +64,7 @@ const Slider = () => {
             <div className="content">
               <h2 className="title">{slide.title}</h2>
               <p className="description">{slide.description}</p>
-              <button className="read-more">Leer más</button>
+              <button className="read-more">Ver más</button>
             </div>
           </li>
         ))}
