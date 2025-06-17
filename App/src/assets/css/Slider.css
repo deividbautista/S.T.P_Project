@@ -1,8 +1,7 @@
 .content {
   position: absolute;
-  top: 75%;
-  left: 42rem;
-  transform: translate(-50%, -50%);
+  top: 25rem;
+  left: 85px;
   background: #534da593;
   color: #dbf2ff;
   padding: 0px;
@@ -21,7 +20,7 @@
 .description {
  color: azure;
  font-size: 22px;
- padding-bottom: 25px;
+ padding-bottom: 35px;
 }
 
 .read-more {
@@ -135,7 +134,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #534da5dc;
+    background: #534da5e3;
     color: #dbf2ff;
     padding: 0px;
     border-radius: 10px;

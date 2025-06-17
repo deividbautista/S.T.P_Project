@@ -87,6 +87,11 @@
     display: block;
   }
 
+  .Navbar_toggler .Icono_bar{
+    font-size: 25px;
+    padding: 15px;
+  }
+
   .Navbar_collapse {
     display: none;
     flex-direction: column;
@@ -97,7 +102,6 @@
   }
 
   .Nav_item {
-    top: 40px;
     width: 100%;
     text-align: center;
 
@@ -107,23 +111,23 @@
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    margin-top: 110px;
+    margin-top: 80px;
     display: inline-block;
-    font-size: 30px
+    font-size: 20px
   }
 
   .Nav_item.active a {
-    font-size: 30px
+    font-size: 20px
   }
 
   .Nav_icon {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .Nav_icon.active {
     color: #80C4E9;
-    font-size: 35px;
+    font-size: 25px;
     transition: .4s ease;
   }
 
@@ -139,14 +143,15 @@
     display: block;
     position: absolute;
     width: 100%;
+    top: 80px;
+    left: -10px;
     background-color: #2d4092fb;
-    margin-top: 170%;
-    margin-left: -32px;
     height: 100vh;
+    
   }
 
   .Logo {
-    height: 200px;
+    height: 150px;
     margin-left: -30px;
   }
 }
